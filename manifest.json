@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "MobileGuestures",
+  "version": "1.0",
+
+  "description": "Enables guestures for quick tab controlling with one finger.",
+  "homepage_url": "https://github.com/Gondus/mobileguestures",
+
+  "icons": {
+    "48": "icons/guesture.svg",
+    "64": "icons/guesture.svg"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["mobileguestures.js"]
+    }
+  ]
+
+}
